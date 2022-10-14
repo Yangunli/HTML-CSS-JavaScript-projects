@@ -20,7 +20,7 @@ body {
 
 .container {
   margin-top: 10vh;
-  width: 60vw;
+  width: min(80%, 600px);
   height: 50vh;
   background: white;
   border-radius: 30px;
@@ -45,7 +45,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: black;
   opacity: 0.8;
   /* border: 2px solid red; */
@@ -62,7 +62,7 @@ body {
 }
 
 .big-text {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1;
   margin: 0 2rem;
 }
