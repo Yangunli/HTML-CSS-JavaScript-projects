@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+}
+
+span {
+  background-image: url("https://cdn1.iconfinder.com/data/icons/chinese-new-year-2146/200/Chinese_New_year-01-256.png");
+  width: 100px;
+  aspect-ratio: 1;
+  position: absolute;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: animate 6s linear;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -2000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+}
